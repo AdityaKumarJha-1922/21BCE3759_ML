@@ -11,6 +11,7 @@ import time
 from routes import routes
 from models import db
 from flask_migrate import Migrate
+from scraper import start_scraper
 
 app = Flask(__name__)
 
@@ -18,6 +19,12 @@ app = Flask(__name__)
 def health():
     return jsonify({"status": "API is running"}), 200
 
+
+start_scraper()
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=5000)
+    
 
 @app.route('/search', methods=['GET'])
 def search():
