@@ -4,7 +4,7 @@ Created on Sun Sep 15 21:06:53 2024
 
 @author: adity
 """
-
+import os
 from flask import Flask, request, jsonify
 from utils import retrieve_documents, rate_limit_user, log_inference_time
 import time
