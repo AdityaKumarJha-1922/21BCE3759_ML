@@ -1,0 +1,27 @@
+# Flask and required extensions
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-RESTful  # Optional if you use Flask-RESTful for APIs
+
+# Database drivers and ORM
+psycopg2-binary  # PostgreSQL driver for Python
+
+# Redis for caching
+redis
+
+# Utilities for handling JSON, parsing requests, etc.
+requests
+pydantic  # For request validation, optional but useful
+gunicorn  # WSGI HTTP server (for production deployment)
+
+# Text processing and document retrieval (if you're using embeddings or NLP features)
+numpy
+scikit-learn  # For similarity metrics (cosine similarity)
+sentence-transformers  # For embedding documents (if needed)
+
+# Logging and monitoring (optional)
+loguru
+
+# Docker support (optional for development)
+docker
